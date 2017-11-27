@@ -75,14 +75,14 @@ title: 黄威龙的Blog
   </div>
 </div>
 </div>
-<h2></h2>
-
-<p>最新文章</p>
-<ul>
-　　{% for post in site.posts %}
-　　　<li style="list-style-type:none;">{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　{% endfor %}
-</ul>
+<div class="">
+  <p>最新文章</p>
+  <ul>
+  　　{% for post in site.posts %}
+  　　　<li style="list-style-type:none;">{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  　　{% endfor %}
+  </ul>
+</div>
 
 </body>
 </html>
